@@ -20,12 +20,12 @@ public class FileBankManager implements IBankManager{
 
             writer.append(bank.title)
                     .append(bank.description)
-                    .append(bank.currency);
+                    .append((char) bank.currency);
             writer.flush();
             writer.close();
         } catch(Exception e){
             e.printStackTrace();
-            return;;
+            return;
         }
 
 
@@ -62,7 +62,7 @@ public class FileBankManager implements IBankManager{
             bank.date = buffered.readLine();
             bank.title = buffered.readLine();
             bank.description = buffered.readLine();
-            bank.label = buffered.readLine();
+            bank.currency = Integer.parseInt(buffered.readLine());
 
             buffered.close();
 
