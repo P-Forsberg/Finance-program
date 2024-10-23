@@ -1,9 +1,11 @@
 package org.example.command;
 
+import org.example.Main;
+
 public class RemoveCommand extends Command{
 
-    public RemoveCommand(String name, String helper) {
-        super("remove","Remove Transaction");
+    public RemoveCommand(Main main) {
+        super("Remove","Remove Transaction", main);
     }
 
     @Override

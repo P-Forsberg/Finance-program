@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.Date;
+package org.example.saveToFile;
 
 public class Bank {
     String title;

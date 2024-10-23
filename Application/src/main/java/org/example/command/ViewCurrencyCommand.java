@@ -1,9 +1,12 @@
 package org.example.command;
 
+import org.example.Main;
+
 public class ViewCurrencyCommand extends Command {
-    public ViewCurrencyCommand(String name, String helper) {
-        super("View", "View - Deposit or withdrawal ");
+    public ViewCurrencyCommand(Main main) {
+        super("View", "View - Deposit or withdrawal ", main);
     }
+
 
     @Override
     public void execute(String[] commandArgs) {

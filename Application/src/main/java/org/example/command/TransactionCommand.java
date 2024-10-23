@@ -1,13 +1,17 @@
 package org.example.command;
 
+import org.example.Main;
+
 public class TransactionCommand extends Command {
-    public TransactionCommand(String name, String helper) {
-        super("Transaction","Deposit or Withdrawal");
+    public TransactionCommand(Main main) {
+        super("Transaction","Deposit or Withdrawal", main);
     }
+
+
 
     @Override
     public void execute(String[] commandArgs) {
-
+        System.out.println("hej");
     }
 
     // lägg in transaction och spara till fil

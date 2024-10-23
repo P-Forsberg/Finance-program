@@ -1,9 +1,12 @@
 package org.example.command;
 
+import org.example.Main;
+
 public class BalanceCommand extends Command {
-    public BalanceCommand(String name, String helper) {
-        super("balance", "See current balance");
+    public BalanceCommand(Main main) {
+        super("Balance", "See current balance", main);
     }
+
 
     @Override
     public void execute(String[] commandArgs) {

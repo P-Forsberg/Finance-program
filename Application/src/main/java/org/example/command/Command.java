@@ -1,15 +1,16 @@
 package org.example.command;
 
+import org.example.Main;
+
 public abstract class Command {
     private String name;
     private String helper;
-    //app?
+    protected Main main;
 
-    public Command(String name, String helper){
+    public Command(String name, String helper, Main main){
         this.name = name;
         this.helper = helper;
-
-        //app?
+        this.main = main;
     }
 
     public abstract void execute(String[] commandArgs);

@@ -1,9 +1,9 @@
-package org.example;
+package org.example.saveToFile;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BankListManager implements IBankManager{
+public class BankListManager implements IBankManager {
 
     private List<Bank> banks = new ArrayList<>();
 

@@ -1,15 +1,20 @@
-package org.example;
+package org.example.menu;
 
+import org.example.Main;
 import org.example.command.Command;
 import org.example.command.IBankRedirect;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class BankMenu  implements IBankRedirect {
+public abstract class BankMenu implements IBankRedirect {
 
     private List<Command> commands = new ArrayList<>();
-    //app?
+    protected Main main;
+
+    public BankMenu(Main main){
+        this.main = main;
+    }
 
     public abstract void display();
 

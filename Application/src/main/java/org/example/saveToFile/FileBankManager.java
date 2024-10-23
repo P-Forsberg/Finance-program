@@ -1,11 +1,11 @@
-package org.example;
+package org.example.saveToFile;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 
-public class FileBankManager implements IBankManager{
+public class FileBankManager implements IBankManager {
 
     @Override
     public void save(Bank bank) {
