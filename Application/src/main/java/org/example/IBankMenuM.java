@@ -1,4 +1,5 @@
-package org.example.menu;
+package org.example;
+
 
 public interface IBankMenuM {
     void setMenu(BankMenu bankMenu);

@@ -1,6 +1,4 @@
-package org.example.menu;
-
-import org.example.Main;
+package org.example;
 
 public class EasyBankMenuM implements IBankMenuM {
 

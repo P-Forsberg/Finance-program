@@ -10,7 +10,7 @@ public class RemoveCommand extends Command{
 
     @Override
     public void execute(String[] commandArgs) {
-
+        System.out.println("hej");
     }
 
     // ta bort fil måste söka blnad depo & with.

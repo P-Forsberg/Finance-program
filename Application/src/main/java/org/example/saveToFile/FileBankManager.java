@@ -15,12 +15,18 @@ public class FileBankManager implements IBankManager {
         File file = new File(folder, bank.title);
         try{
             file.createNewFile();
+            //append för att lägga till data i samma fil
+            FileWriter writer = new FileWriter(file, true);
 
-            FileWriter writer = new FileWriter(file);
+            writer.append("\n----\n");
 
             writer.append(bank.title)
+                    .append(" ")
+                    .append(bank.date)
+                    .append(" ")
                     .append(bank.description)
-                    .append((char) bank.currency);
+                    .append(" ")
+                    .append(String.valueOf(bank.currency));
             writer.flush();
             writer.close();
         } catch(Exception e){
@@ -46,7 +52,7 @@ public class FileBankManager implements IBankManager {
 
     @Override
     public Bank getByTitle(String title) {
-        File folder = new File("/.bank");
+        File folder = new File("./bank");
         if(!folder.exists())
             return null;
 

@@ -1,6 +1,5 @@
-package org.example.menu;
+package org.example;
 
-import org.example.Main;
 import org.example.command.Command;
 import org.example.command.IBankRedirect;
 
